@@ -22,29 +22,6 @@ const rating = {
 
 const IndexPage = () => (
   <Layout>
-    {/* <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="home">
-      <h1>Hello There</h1>
-      <p>Welcome to my awesome blog</p>
-      <div>
-        <div
-          style={{
-            maxWidth: `300px`,
-            margin: "0 auto 1.45rem",
-          }}
-        >
-          <Image />
-        </div>
-      </div>
-      <Link to="/blogposts/">View all posts</Link>
-    </div> */}
-    {/* <Hero
-      button={button}
-      rating={rating}
-      headerSummary="test matching"
-      headerText="test matching"
-      description="test description"
-    ></Hero> */}
     <HeroBanner></HeroBanner>
     <CourseOverview></CourseOverview>
     <ValueProps></ValueProps>

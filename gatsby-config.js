@@ -46,9 +46,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentstack`,
       options: {
-        api_key: `blt14b623a278d6487a`,
-        delivery_token: `cs4fb9723eb70c65076a788784`,
-        environment: `test`,
+        api_key: process.env.contentstack_api_key,
+        delivery_token: process.env.contentstack_delivery_token,
+        environment: process.env.contentstack_environment,
       },
     },
   ],

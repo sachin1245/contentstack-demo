@@ -1,40 +1,44 @@
-const path = require(`path`);
-const slash = require(`slash`);
+const path = require(`path`)
+const slash = require(`slash`)
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
   // we use the provided allContentfulBlogPost query to fetch the data from Contentful
   return graphql(
     `
       {
-        allContentfulBlogPost {
+        allContentstackCourseLandingPage {
           edges {
             node {
+              shortname
               id
-              slug
+              course_id
+              url
             }
           }
         }
       }
     `
-  ).then(result => {
+  )
+    .then(result => {
       if (result.errors) {
-        console.log("Error retrieving contentful data",      result.errors);
+        console.log("Error retrieving contentful data", result.errors)
       }
+      console.log(result)
       // Resolve the paths to our template
-      const blogPostTemplate = path.resolve("./src/templates/blogpost.js");
+      const coursePageTemplate = path.resolve("./src/templates/course.js")
       // Then for each result we create a page.
-      result.data.allContentfulBlogPost.edges.forEach(edge => {
+      result.data.allContentstackCourseLandingPage.edges.forEach(edge => {
         createPage({
-          path: `/blogpost/${edge.node.slug}/`,
-          component: slash(blogPostTemplate),
+          path: `/course/${edge.node.shortname}/`,
+          component: slash(coursePageTemplate),
           context: {
-                slug: edge.node.slug,
-                id: edge.node.id
-            }
-        });
-      });
+            shortname: edge.node.shortname,
+            id: edge.node.course_id,
+          },
+        })
+      })
     })
     .catch(error => {
-      console.log("Error retrieving contentful data", error);
-    });
-};
+      console.log("Error retrieving contentful data", error)
+    })
+}
