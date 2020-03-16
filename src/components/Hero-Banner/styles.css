@@ -1,0 +1,293 @@
+.hero-banner-container {
+    height: 520px;
+    color: white;
+    padding-top: 75px;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-banner-container * {
+    color: white;
+}
+
+.hero-banner-container ::ng-deep cloudinary-srcset-component picture img {
+    display: inline-block;
+    width: auto;
+    height: 42px;
+}
+
+.hero-banner-container .application-cta {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-banner-container .application-cta a {
+    text-decoration: none;
+}
+
+.content-container {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.workshop-points-wrp {
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.workshop-points-wrp label.workshop-point {
+    font-weight: 500;
+}
+
+.workshop-points-wrp label.workshop-point:last-child .workshop-point-break {
+    display: none;
+}
+
+@media only screen and (max-width: 540px) {
+    .workshop-points-wrp label.workshop-point {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .workshop-points-wrp label.workshop-point:last-child {
+        display: none;
+    }
+
+    .workshop-points-wrp label.workshop-point:nth-child(3) .workshop-point-break {
+        display: none;
+    }
+}
+
+.workshop-points-wrp .workshop-point-break {
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .workshop-points-wrp {
+        margin-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .workshop-points-wrp {
+        margin-bottom: 25px;
+    }
+}
+
+h1.workshop-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2.workshop-subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.application-form {
+    display: none;
+}
+
+.workshop-partner {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.workshop-partner-label {
+    margin-right: 25px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.switchup-container {
+    top: 45px;
+    right: 45px;
+    width: 260px;
+    height: 260px;
+    text-align: center;
+    position: absolute;
+    padding: 30px 65px;
+    border-radius: 50%;
+    background-color: #072b77;
+}
+
+.switchup-container ::ng-deep cloudinary-srcset-component:first-child picture img {
+    width: 100px;
+    height: 80px;
+}
+
+.switchup-container ::ng-deep cloudinary-srcset-component:nth-child(2) picture img {
+    width: 80px;
+    height: 15px;
+}
+
+.switch-rating {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.switch-link {
+    font-size: 16px;
+    text-align: center;
+}
+
+.switch-link a {
+    color: white;
+}
+
+.switch-link a.switchup-link {
+    color: white;
+}
+
+.tablet-switchup {
+    display: none;
+}
+
+.switchup-footer-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.switchup-footer-container .switchup-badge-img ::ng-deep picture img {
+    height: 80px;
+    width: 100px;
+}
+
+.switchup-footer-content {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+.switchup-footer-content .switch-rating {
+    margin-right: 15px;
+}
+
+.switchup-footer-content .switchup-star-img ::ng-deep picture img {
+    height: 15px;
+    width: 80px;
+    vertical-align: initial;
+}
+
+.switchup-footer-content .switch-link {
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-banner-container ::ng-deep cloudinary-srcset-component picture img {
+        width: auto;
+        height: 30px;
+    }
+
+    .hero-banner-container h1.workshop-title {
+        font-size: 32px;
+    }
+
+    .hero-banner-container .application-cta {
+        display: none;
+    }
+
+    .hero-banner-container .application-form {
+        display: block;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .hero-banner-container .application-form .application-block {
+        display: inline-block;
+        position: relative;
+        margin-top: 35px;
+    }
+
+    .hero-banner-container i.form-control-error-icon {
+        font-family: "FontAwesome";
+        color: #ef2964;
+    }
+
+    .hero-banner-container .workshop-partner {
+        display: inline-block;
+        opacity: 1;
+        margin-top: 0;
+        margin-right: 10px;
+        font-size: 14px;
+        padding-right: 20px;
+        border-right: 1px solid white;
+        padding-bottom: 5px;
+    }
+
+    .hero-banner-container .workshop-partner-label {
+        display: block;
+        margin-right: 0;
+        font-size: 14px;
+        margin-bottom: 15px;
+        margin-top: -8px;
+        text-align: center;
+    }
+
+    .hero-banner-container .switchup-container {
+        display: none;
+    }
+
+    .hero-banner-container .tablet-footer-container {
+        display: block;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .hero-banner-container .tablet-switchup {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        margin-top: -10px;
+    }
+
+    .hero-banner-container .tablet-switchup .switch-link {
+        font-size: 14px;
+        margin-top: 2px;
+    }
+
+    .hero-banner-container .tablet-switchup .switch-rating {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .hero-banner-container .tablet-switchup ::ng-deep cloudinary-srcset-component picture img {
+        width: 65px;
+        height: 12px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .hero-banner-container {
+        height: fit-content;
+    }
+
+    .hero-banner-container .application-form {
+        max-width: 300px;
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    .hero-banner-container .workshop-partner {
+        max-width: 150px;
+    }
+
+    .hero-banner-container .workshop-partner-label {
+        line-height: 1.21;
+        margin-top: -3px;
+    }
+}

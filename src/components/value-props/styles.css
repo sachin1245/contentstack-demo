@@ -1,0 +1,45 @@
+.sp-learning-experience {
+    display: flex;
+}
+
+.sp-learning-experience div.section-title {
+    margin-top: 0;
+    margin-bottom: 45px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.learning-experience-info {
+    margin: auto;
+}
+
+.learning-experience-img-wrp ::ng-deep picture img {
+    width: 630px;
+}
+
+.l-e-point-wrp:last-of-type .l-e-point-info {
+    margin-bottom: 0;
+}
+
+.l-e-point-img {
+    height: 25px;
+    width: 31px;
+    margin-right: 20px;
+    background-size: cover;
+    background-position: 0 0;
+    display: inline-block;
+}
+
+.l-e-point-info {
+    display: inline-block;
+    margin-bottom: 55px;
+    vertical-align: top;
+}
+
+h4.l-point-title {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
