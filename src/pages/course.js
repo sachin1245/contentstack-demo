@@ -19,25 +19,25 @@ const CoursePage = ({ data }) => {
   )
 }
 export default CoursePage
-export const query = graphql`
-  query CourseLandingPageQuery {
-    allContentfulBlogPost(limit: 1000) {
-      edges {
-        node {
-          id
-          title
-          slug
-          body {
-            body
-          }
-          image {
-            file {
-              url
-            }
-          }
-          tags
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query CourseLandingPageQuery {
+//     allContentfulBlogPost(limit: 1000) {
+//       edges {
+//         node {
+//           id
+//           title
+//           slug
+//           body {
+//             body
+//           }
+//           image {
+//             file {
+//               url
+//             }
+//           }
+//           tags
+//         }
+//       }
+//     }
+//   }
+// `

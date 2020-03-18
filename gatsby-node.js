@@ -25,7 +25,9 @@ exports.createPages = ({ graphql, actions }) => {
       }
       console.log(result)
       // Resolve the paths to our template
-      const coursePageTemplate = path.resolve("./src/templates/course.js")
+      const coursePageTemplate = path.resolve(
+        "./src/templates/course-sections.js"
+      )
       // Then for each result we create a page.
       result.data.allContentstackCourseLandingPage.edges.forEach(edge => {
         createPage({

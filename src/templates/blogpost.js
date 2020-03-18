@@ -26,20 +26,20 @@ const BlogPost = ({ data }) => {
   )
 }
 export default BlogPost
-export const pageQuery = graphql`
-  query($slug: String!) {
-    contentfulBlogPost(slug: { eq: $slug }) {
-      title
-      slug
-      body {
-        body
-      }
-      image {
-        file {
-          url
-        }
-      }
-      tags
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query($slug: String!) {
+//     contentfulBlogPost(slug: { eq: $slug }) {
+//       title
+//       slug
+//       body {
+//         body
+//       }
+//       image {
+//         file {
+//           url
+//         }
+//       }
+//       tags
+//     }
+//   }
+// `
